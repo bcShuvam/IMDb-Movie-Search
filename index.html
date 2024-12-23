@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./movie.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <section id="nav-bar">
+      <div id="nav-bar-title">
+        <i class="fa-brands fa-imdb margin-right"></i>
+        <div class="lg-text">Movie Search</div>
+      </div>
+      <div id="search-box">
+        <input
+          type="text"
+          name="search-box"
+          id="movie-name"
+          placeholder="Enter movie name"
+        />
+        <i class="fa-solid fa-magnifying-glass" onclick="getMoviesList()"></i>
+        <!-- <button onclick="getMoviesList()">Search</button> -->
+      </div>
+    </section>
+    <div id="no-movies" class="lg-text"></div>
+    <dialog data-modal="">
+      <section id="movie-details">
+        <div id="movie-poster">
+          <img src="" alt="" />
+        </div>
+        <div class="movie-description">
+          <div class="">
+            <div id="title"></div>
+            <div class="rating bold movie-details-div">
+              <b>IMDB: </b><span id="rating-text"></span>
+            </div>
+            <div class="movie-details-div">
+              <b>Released: </b><span id="released-text"></span>
+            </div>
+            <div class="movie-details-div">
+              <b> Type: </b><span id="type-text"></span>
+            </div>
+            <div class="movie-details-div">
+              <b>Genre: </b><span id="genre-text"></span>
+            </div>
+            <div class="movie-details-div">
+              <b>Duration: </b><span id="runtime-text"></span>
+            </div>
+            <div class="movie-details-div">
+              <b>Country: </b><span id="country-text"></span>
+            </div>
+            <div class="movie-details-div">
+              <b>Actors: </b><span id="casts-text"></span>
+            </div>
+            <div class="movie-details-div">
+              <b>Box Office: </b><span id="box-office-text"></span>
+            </div>
+            <div class="movie-details-div">
+              <b>Plot: </b><span id="plot-text"></span>
+            </div>
+          </div>
+          <button data-close-modal>Close</button>
+        </div>
+      </section>
+    </dialog>
+    <section class="movies-list">
+      <div id="display-search-result">
+        <!-- <div id="movie-card">
+          <div id="movie-img">
+            <img
+              src="https://m.media-amazon.com/images/M/MV5BMTczNTI2ODUwOF5BMl5BanBnXkFtZTcwMTU0NTIzMw@@._V1_SX300.jpg"
+              alt=""
+            />
+          </div>
+          <div id="movie-info-card">
+            <div id="movie-title">Title: 'Iron Man'</div>
+            <div id="movie-release-year">Year: '2008'</div>
+            <div id="movie-imdb-id">imdbID: 'tt0371746'</div>
+            <div id="movie-type">Type: 'movie'</div>
+          </div>
+        </div> -->
+
+        <!-- <img id="movie-poster" src="" width="200" height="200" /> -->
+      </div>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>

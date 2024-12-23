@@ -1,0 +1,77 @@
+body {
+  margin: 0px;
+}
+#movie-details {
+  display: flex;
+  /* justify-content: start;
+  align-items: center; */
+}
+#movie-description div {
+  line-height: 80%;
+}
+#movie-poster {
+  /* margin: 24px; */
+  /* display: flex;
+  justify-content: start;
+  align-items: center; */
+}
+.rating {
+  color: #ffa600;
+}
+#movie-poster img {
+  height: 400px;
+  width: 280px;
+  border-radius: 16px;
+  object-fit: fill;
+}
+.movie-description {
+  margin-left: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.movie-details-div {
+  display: grid;
+  grid-template-columns: 120px auto;
+  margin: 8px 0px;
+  /* flex-direction: ; */
+}
+#title {
+  font-size: 32px;
+  font-weight: 700;
+}
+b {
+  font-size: 20px;
+  font-weight: 600;
+}
+span {
+  font-size: 20px;
+  font-weight: 500;
+}
+.bold {
+  font-weight: 700;
+}
+dialog {
+  width: 80%;
+  border-radius: 16px;
+}
+button {
+  /* position: relative; */
+  float: right;
+  background-color: red;
+  border: transparent solid 2px;
+  padding: 5px 10px;
+  color: #000;
+  font-size: 16px;
+  border-radius: 8px;
+  transition: 0.3s ease-in;
+}
+button:hover {
+  background-color: #ffffff;
+  border: 2px solid red;
+  color: black;
+  font-size: 16px;
+  transition: 0.3s ease-out;
+  cursor: pointer;
+}

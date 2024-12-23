@@ -1,0 +1,113 @@
+/* Index page css */
+body {
+  margin: 0px;
+  background-color: #28282b;
+}
+#nav-bar {
+  padding: 8px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+}
+#nav-bar-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+#nav-bar-title i {
+  font-size: 48px;
+  color: yellow;
+}
+#search-box {
+  font-size: 20px;
+}
+#search-box i:hover {
+  cursor: pointer;
+}
+input,
+select,
+textarea {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 15px;
+  resize: none;
+  background-color: transparent;
+  width: 90%;
+  margin: 0 auto;
+  /* border-bottom: 1px solid #000; */
+}
+input:focus,
+textarea:focus {
+  outline: none;
+  border: none;
+}
+#search-box {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border-radius: 16px;
+  background-color: #ccc;
+}
+.lg-text {
+  font-size: 28px;
+}
+#display-search-result {
+  display: grid;
+  grid-template-columns: repeat(4, 280px);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 16px;
+  margin: 24px;
+}
+.movies-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#movie-card {
+  height: auto;
+  width: 280;
+  border-radius: 16px;
+  background-color: #ccc;
+  transition: 0.3s ease-in-out;
+}
+#movie-title,
+#movie-release-year,
+#movie-type {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+#movie-card:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+  transition: 0.3s ease-in-out;
+}
+#movie-img img {
+  height: 400px;
+  width: 280px;
+  object-fit: fill;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+#movie-info-card {
+  padding: 8px 16px;
+}
+.margin-right {
+  margin-right: 16px;
+}
+#no-movies {
+  /* background: red; */
+  padding: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* -ms-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translate(-50%, -50%); */
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
